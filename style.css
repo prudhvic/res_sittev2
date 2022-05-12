@@ -35,7 +35,6 @@ img {
   border-radius: 5px;
 }
 header {
-  width: 100%;
   background: linear-gradient(to right, #cf0063 40%, #333333);
 }
 .navbar {
@@ -255,10 +254,7 @@ footer h2 {
   font-size: 1rem;
   margin: 2em 0;
 }
-@media (max-width: 800px) {
-  * {
-    overflow-x: hidden;
-  }
+@media (max-width: 960px) {
   header {
     width: 100%;
   }
