@@ -255,8 +255,8 @@ footer h2 {
   margin: 2em 0;
 }
 @media (max-width: 960px) {
-  header {
-    width: 100%;
+  * {
+    overflow-x: hidden;
   }
   .heading-1 p {
     font-size: 1.1rem;
@@ -304,6 +304,9 @@ footer h2 {
   .pricing-panel p {
     font-size: 0.8rem;
   }
+  .food-section > div {
+    flex-direction: column-reverse;
+  }
   button i {
     font-size: 2rem;
     color: black;
@@ -330,6 +333,7 @@ footer h2 {
     width: 100%;
     transform: translateY(-100%);
     z-index: -1;
+    opacity: 0;
     padding: 10px;
   }
   ul {
@@ -369,6 +373,7 @@ footer h2 {
   nav.active {
     z-index: 1;
     transform: translateY(0);
+    opacity: 1;
   }
   nav ul li:hover a::after {
     background-color: #1b1b1b;
